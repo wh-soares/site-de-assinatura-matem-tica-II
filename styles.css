@@ -1,11 +1,11 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
+    --branco-principal: #000000;
+    --cinza-secundario: #00000018;
     --botao-azul: #167BF7;
     --cor-de-fundo: #000000;
 }
 body {
-    background-color: var(#000000);
+    background-color: var(#ff0000);
     color: var(#0db6e0);
 }* {
     margin: 0;
@@ -14,14 +14,14 @@ body {
 
 .principal {
     background-image: url("");
-}.container {
+}.container .principal {
     height: 200vh;
     color:#ce0c9d
 }
 .principal {
     background-image: url("background.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 20;
 }
 .container__botao {
     background-color: var(#00fc00);
@@ -29,4 +29,12 @@ body {
     padding: 1em;
     color: var(#0de00d);
     display: block;
+}
+.container {
+    height: 100vh;
+    display: grid;
+grid-template-columns: 50% 50%;
+}.botao_secundario {
+    background-color: #8b4308;
+    border: 2px solid var(#a31780)
 }
