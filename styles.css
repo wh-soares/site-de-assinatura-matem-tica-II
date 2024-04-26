@@ -1,24 +1,24 @@
 :root {
-    --preto-principal: #f3eeee;
-    --cinza-secundario: #f1dbdb;
-    --botao-azul: #2473d3;
-    --cor-de-fundo: #ffffff;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
+
 body {
-    background-color: var(#fcfcfc);
-    color: var(#0db6e0);
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-}* {
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
-.container .principal {
-    height: 200vh;
-    color:#ce0c9d
-}
 .principal {
     background-image: url("background.png");
     background-repeat: no-repeat;
@@ -26,60 +26,61 @@ body {
     align-items: center;
     text-align: center;
 }
-.container__botao {
-    background-color: var(#00fc00);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(#0de00d);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 1em;
-}
+
 .container {
     height: 100vh;
-    display: center;
-grid-template-columns: 0% 0%;
-
-}.botao_secundario {
-    background-color: #dd16bc;
-    font-weight: 700;
-    font-size: 48px;
-    color: var (--branco-principal);
-    margin-bottom: 0.1em; 
-
-    border: 2px solid var(#000000)
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-:root {
-    --branco-principal: #000000;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-    --fonte-principal: 'Inter';
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
 }
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
 .container__aviso {
     font-size: 12px;
     color: var(--cinza-secundario);
 }
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
 .container__imagem {
     margin: 1em 0 2em 0;
 }
+
 .container__caixa {
     margin: 0 6em;
 }
-.secundario_imagem {
+
+.secundario__imagem {
     width: 80%;
 }
-.secundario{
+
+.secundario {
     align-items: center;
-    margin: 38 50em;
+    margin: 0 10em;
 }
+
 .descricao__titulo {
     font-weight: 700;
     font-size: 48px;
-    color: var (#000000);
-    margin-bottom: 0.1em; 
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
 }
-.descrisão_texto {
-    color: var(#000000)
+
+.descricao__texto {
+    color: var(--cinza-secundario);
 }
