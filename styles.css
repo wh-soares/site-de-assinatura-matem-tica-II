@@ -1,11 +1,11 @@
 :root {
-    --branco-principal: #11e268;
-    --cinza-secundario: #ee141418;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #000000;
+    --preto-principal: #f3eeee;
+    --cinza-secundario: #f1dbdb;
+    --botao-azul: #2473d3;
+    --cor-de-fundo: #ffffff;
 }
 body {
-    background-color: var(#c40e0e);
+    background-color: var(#fcfcfc);
     color: var(#0db6e0);
     font-family: var(--fonte-principal);
     font-size: 16px;
@@ -15,10 +15,7 @@ body {
     padding: 0;
 }
 
-.principal {
-    background-image: url("");
-    color:rgb(4, 104, 190)
-}.container .principal {
+.container .principal {
     height: 200vh;
     color:#ce0c9d
 }
@@ -42,9 +39,15 @@ body {
     height: 100vh;
     display: center;
 grid-template-columns: 0% 0%;
+
 }.botao_secundario {
     background-color: #dd16bc;
-    border: 2px solid var(--branco-principal)
+    font-weight: 700;
+    font-size: 48px;
+    color: var (--branco-principal);
+    margin-bottom: 0.1em; 
+
+    border: 2px solid var(#000000)
 }
 
 :root {
@@ -69,11 +72,14 @@ grid-template-columns: 0% 0%;
 }
 .secundario{
     align-items: center;
-    margin: o 10em;
+    margin: 38 50em;
 }
 .descricao__titulo {
     font-weight: 700;
     font-size: 48px;
-    color: var (--branco-principal);
+    color: var (#000000);
     margin-bottom: 0.1em; 
+}
+.descrisão_texto {
+    color: var(#000000)
 }
